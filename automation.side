@@ -1,0 +1,88 @@
+{
+  "id": "47fac4e8-eb64-462b-8dc1-be8e0b6f1fc9",
+  "version": "2.0",
+  "name": "automation",
+  "url": "https://dsssb.delhi.gov.in",
+  "tests": [{
+    "id": "5ab617a7-255b-4c24-b8ad-bf50bd444671",
+    "name": "Test1",
+    "commands": [{
+      "id": "a3a50b27-d6ba-4d24-af35-d47129b33890",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af117301-a4a8-47fd-986d-2b2c7583d330",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "830x826",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6057957e-59fd-4273-9664-8f1c06baf203",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View",
+      "targets": [
+        ["linkText=View", "linkText"],
+        ["css=.view-display-id-block_1 li:nth-child(1) > .tab-view", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//div[@id='Notifications']/div/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dsssb/notice-cum-corrigendum-post-codes-advertised-under-combined-examination-scheme-0')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "353ea6c6-0a6d-4aa0-a547-b8e03987b70e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=.tab-view", "css:finder"],
+        ["xpath=(//a[contains(text(),'Download')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block-dit-dsssb-content']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sites/default/files/DSSSB/circulars-orders/scan20240219_0019_1.pdf')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3747",
+      "windowTimeout": 2000
+    }, {
+      "id": "59af5a47-c618-4c4c-921f-7d20fb8c37f0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ad051cb-4b86-4ea2-afc6-9a694cda7c45",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3102f5c5-63b7-4f33-a8aa-9ad141b0ef22",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "508a750d-7407-485b-858d-7138e8b482a7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5ab617a7-255b-4c24-b8ad-bf50bd444671"]
+  }],
+  "urls": ["https://dsssb.delhi.gov.in/"],
+  "plugins": []
+}
